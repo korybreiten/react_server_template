@@ -1,0 +1,163 @@
+#navCont {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+}
+
+#navUpper {
+  height: 7vh;
+  background-color: #363636;
+  z-index: 45;
+}
+
+#navLower {
+  padding: 0 1rem 0 1rem;
+  position:relative;
+  height: 4.5vh;
+  overflow:hidden;
+  background: #7e00be;
+  border-radius: 0 0 1.5rem 1.5rem;
+  z-index: 40;
+}
+
+#logo {
+  transform: translateY(-.5rem);
+  margin-bottom: -1rem;
+  padding: 0 1rem 0 1rem;
+  min-width: fit-content;
+  font-family: 'Teko';
+  font-size: 3rem;
+  background: -webkit-linear-gradient(90deg, #1EFF7A, #ffffff 75%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-decoration: none;
+}
+
+#avatar {
+  width: 2rem;
+  height: 2rem;
+  object-fit: cover;
+  border: .15rem solid;
+  border-radius: .25rem;
+}
+
+#avatarDefault {
+  width: 3rem;
+  margin-right: 1rem;
+  transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+  font-family: 'Teko', sans-serif;
+  font-size: 2rem;
+  color: #989898;
+  text-decoration: none;
+}
+
+#avatarDefault:hover,
+#avatarDefault:focus {
+  color: #ffffff;
+}
+
+#joinCont {
+  text-align: right;
+}
+
+#loginCont {
+  width: fit-content;
+}
+
+#hamburger {
+  width: min-content;
+}
+
+#hamButton {
+  width: 2.5rem;
+  height: 2.5rem;
+  margin-right: 1rem;
+}
+
+#hamIcon {
+  width: 1.5rem;
+  height: 1.5rem;
+  transform: translateX(-0.3rem);
+}
+
+#hamHeader {
+  background: #363636;
+}
+
+#hamBody {
+  background: #363636;
+}
+
+#closeIcon {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.offcanvas {
+  width: fit-content !important;
+  height: fit-content;
+}
+
+#icon {
+  background-color: #989898;
+}
+
+#navLinks {
+  margin: auto;
+  padding-right: 12rem;
+}
+
+#searchBar {
+  color: #ffffff;
+  border: none;
+  border-radius: .25rem 0 0 .25rem;
+  height: 1.5rem;
+  background: #363636;
+  transition: none;
+  width: 10rem;
+}
+
+#clearSearch {
+  color: #ffffff;
+  background: #363636;
+  border: none;
+  border-radius: 0 .25rem .25rem 0;
+  font-size: .75rem;
+  height: 1.5rem;
+}
+
+#searchBlank {
+  background: #363636;
+  border: none;
+  border-radius: 0 .25rem .25rem 0;
+  height: 1.5rem;
+  width: 2rem;
+}
+  
+/* 320px — 480px: Mobile devices
+481px — 768px: iPads, Tablets
+769px — 1024px: Small screens, laptops
+1025px — 1200px: Desktops, large screens
+1201px and more —  Extra large screens, TV */
+
+
+
+@media (max-width: 700px) {
+  #logo {
+    font-size: 2rem;
+  }
+  #navUpper {
+    height: 4.5vh;
+  }
+  #searchCont {
+    margin-top: .5rem;
+  }
+}
+
+@media (max-width: 400px) {
+  #logo {
+    margin-top: .5rem;
+    font-size: 1.5rem;
+  }
+}
